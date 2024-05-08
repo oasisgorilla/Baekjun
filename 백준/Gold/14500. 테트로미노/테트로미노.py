@@ -2,8 +2,8 @@ import sys
 
 input_arr = list(map(int, sys.stdin.readline().split()))
 
-N = input_arr[0]  # 세로 크기
-M = input_arr[1]  # 가로 크기
+N = input_arr[0] # 세로 크기
+M = input_arr[1] # 가로 크기
 
 arr = []
 
@@ -19,7 +19,7 @@ if M >= 4:
             block_sum = arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[i][j + 3]
             if block_sum > max_block:
                 max_block = block_sum
-
+    
 # ㅁ
 # ㅁ
 # ㅁ
@@ -38,7 +38,7 @@ if M >= 2:
             block_sum = arr[i][j] + arr[i + 1][j] + arr[i][j + 1] + arr[i + 1][j + 1]
             if block_sum > max_block:
                 max_block = block_sum
-
+            
 # ㅁ
 # ㅁ
 # ㅁㅁ
@@ -152,7 +152,6 @@ if M >= 3:
             block_sum = arr[i][j] + arr[i][j + 1] + arr[i + 1][j + 1] + arr[i + 1][j + 2]
             if block_sum > max_block:
                 max_block = block_sum
-
 # ㅁㅁㅁ
 #   ㅁ
 if M >= 3:
@@ -170,7 +169,6 @@ if M >= 3:
             block_sum = arr[i][j + 1] + arr[i + 1][j] + arr[i + 1][j + 1] + arr[i + 1][j + 2]
             if block_sum > max_block:
                 max_block = block_sum
-
 # ㅁ
 # ㅁㅁ
 # ㅁ
