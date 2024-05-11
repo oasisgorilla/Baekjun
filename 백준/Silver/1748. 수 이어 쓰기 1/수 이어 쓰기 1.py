@@ -1,5 +1,5 @@
 import sys
-
+# 크고 아름다운 코드...
 n = int(sys.stdin.readline())
 
 cnt = 0
