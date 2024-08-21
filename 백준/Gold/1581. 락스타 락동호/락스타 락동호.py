@@ -51,7 +51,7 @@ def bfs(kind):
     else:
         q.append((kind, 1, 0, 0, 0, 1))
     while q:
-        k, c, ff, fs, sf, ss = q.popleft()
+        k, c, ff, fs, sf, ss = q.popleft() # k: 현재 곡 종류, c: 현재 곡 좌표(방문체크용) 나머지: 종류별 앨범에 넣은 곡 수
         for i in adj[k]:
              # 더 연주할 수 있고 아직 한번도 가지 않았다면 탐색
             if c + 1 <= val:
