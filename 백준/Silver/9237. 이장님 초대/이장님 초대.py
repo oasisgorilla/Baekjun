@@ -15,7 +15,7 @@
 
 # print(f"{answer + N - 1}")
 
-"""2트(그리디)"""
+"""2트(그리디, 42036kb, 88ms)"""
 import sys
 
 input = sys.stdin.readline
