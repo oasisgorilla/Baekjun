@@ -28,12 +28,14 @@ for _ in range(Q):
 
         # 정보 구매
         temp_cost = 0
-        try:
+        if k > len(gorillas[name]): # 구매하려는 정보 수가 고릴라가 보유한 정보보다 많은 경우
+            temp_cost = -sum(gorillas[name]) # 전량 구매
+            gorillas[name] = []
+            
+        else:
             for _ in range(k):
                 temp_cost += -heapq.heappop(gorillas[name]) # 음수를 다시 양수로 바꿔준다.
-        except:
-            pass
         
         total_cost += temp_cost
-    
+
 print(total_cost)
