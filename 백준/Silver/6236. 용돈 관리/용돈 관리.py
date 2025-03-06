@@ -24,7 +24,7 @@ while left <= right:
     if count > M or mid < max(K):
         left = mid + 1
     else:
-        right = mid - 1
         answer = mid
+        right = mid - 1
 
 print(answer)
