@@ -3,9 +3,9 @@
 
 int main()
 {
-    std::string id;
+    char id[51];
     
-    getline(std::cin, id);
+    std::cin >> id;
     
     std::cout << id << "??!";
     
